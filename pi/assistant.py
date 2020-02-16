@@ -78,8 +78,8 @@ class MySubscribeCallback(SubscribeCallback):
 def init_pubnub():
     global pubnub
     pnconfig = PNConfiguration()
-    pnconfig.subscribe_key = 'SUBSCRIBE_KEY'
-    pnconfig.publish_key = 'PUBLISH_KEY'
+    pnconfig.subscribe_key = 'sub-c-ada75728-5012-11ea-80a4-42690e175160'
+    pnconfig.publish_key = 'pub-c-4875cf2a-9326-4a1b-9169-541c1a2418d9'
     pnconfig.reconnect_policy = PNReconnectionPolicy.LINEAR
     pubnub = PubNub(pnconfig)
     pubnub.add_listener(MySubscribeCallback())
